@@ -24,6 +24,7 @@ public class lab15 {
 
         System.out.println("Трекгольник Паскаля");
         for (ArrayList<Integer> integers : pascalTriangle) {
+            for (Integer i : integers)
             System.out.println(integers);
         }
     }

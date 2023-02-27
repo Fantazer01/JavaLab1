@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class Task3 {
-    public void Invoke()
+    public void invoke()
     {
         Scanner in = new Scanner(System.in);
         int max, a;
@@ -17,5 +17,16 @@ public class Task3 {
         }
 
         System.out.println(max);
+    }
+
+    private int abc(int el, int ... array)
+    {
+        int max = el;
+
+        for (Integer i : array)
+            if (max < i)
+                max = i;
+
+        return max;
     }
 }
